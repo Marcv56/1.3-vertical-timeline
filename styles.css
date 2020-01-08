@@ -1,0 +1,44 @@
+*  {box-sizing: border-box ;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+div:not(.container){
+  height: 250px;
+  background-color: lightblue;
+  border: solid 2px #000;
+}
+
+
+@media (min-width:768px) {
+  div:(not container){
+    display: inline-block;
+    width: 350px;
+
+  }
+
+}
+
+@keyframes fade-in {
+  0{
+opacity: 0;
+  }
+  60%{
+opacity: .5;
+}
+100%{
+  opacity: 1;
+}
+
+}
+
+.fade-in{
+  animation: fade-in .6s;
+}
